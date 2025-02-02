@@ -11,7 +11,7 @@ const gallonToLiter = 3.785;
 const kiloToPound = 2.204;
 const poundToKilo = 0.4536;
 convertBtn.addEventListener("click", function () {
-  let baseValue = inputEl.value;
+  let baseValue = Number(inputEl.value);
 
   lengthEl.textContent = `${baseValue} meters = ${(baseValue * meterToFeet).toFixed(3)} feet | ${baseValue} feet = ${(baseValue * feetToMeter).toFixed(3)} meters`;
   volumeEl.textContent = `${baseValue} litres = ${(baseValue * literToGallon).toFixed(3)} gallons | ${baseValue} gallons = ${(baseValue * gallonToLiter).toFixed(3)} litres`;
